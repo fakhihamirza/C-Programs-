@@ -21,6 +21,5 @@ int main()
 	    printf("%d ",C[i][j]);
 	    printf("\n");
 	}
-	getch();
 	return 0;
 }
