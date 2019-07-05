@@ -10,14 +10,14 @@ are of char type and each blocks's base address is stored in the pointer that we
 are pointed by our double pointers that are made inside our stack memory / main so that we can access all the 5 strings
 or we can access each element of any string with +i and +j using Dynamic Memory Allocation */
 
-for(i=0;i<5;i++){
+for(i=0;i<5;++i){
 *(strings+i)=(char *)calloc(20,sizeof(char));
 }
 printf("Enter 5 Names \n");
 for(i=0;i<5;i++){
 gets(*(strings+i));
 }
-for(i=0;i<5;i++){
+for(i=0;i<5;++i){
 for(j=0;(*(strings+i)+j)!='\0';j++){
 printf("%c",*(*(strings+i)+j));
 }
